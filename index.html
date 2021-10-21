@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" style=" height:100%; max-width:100%;">
+<html lang="en" dir="ltr" >
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Lord and Taylor</title>
@@ -10,14 +10,20 @@
 
     <style type="text/css">
       /* desktop MORE THAN OR EQUAL TO 960*/
-      @media only screen and (min-width: 960px) {}
+      @media only screen and (min-width: 960px) {
+        .container{
+          width: 960px !important;
+        }
+      }
       /* midsizes LESS THAN 960*/
       @media only screen and (max-width: 960px) {
-
+        .container{
+          width: 600px !important;
+        }
       }
       /* mobile LESS THAN 600*/
       @media only screen and (max-width: 600px) {
-        .cont600{
+        .container{
           width: 100% !important;
         }
 
@@ -25,32 +31,29 @@
     </style>
   </head>
 
-  <body style="height: 100%; max-width: 100%; margin: 0 auto; padding: 0; ">
-    <!-- Start of htmlemail -->
-    <table class="container cont600 " width="600" border="0" cellspacing="0" cellpadding="0" style="max-width: 100%;  height: 100%; margin-top: 0; margin-bottom: 0; margin-right: auto; margin-left:auto; background-color: white;">
+  <body style="margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto;+">
+
+    <!-- Start of htmlemail container -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:100%;">
+
       <tr>
         <td>
-          <!-- CONTAINER-->
-          <table class="container"  height="100" align="center" cellspacing="0" cellpadding="0" border="0"  style=" height: 100%; max-width: 100%;">
+          <!-- CONTAINER 600 -->
+          <table class="container" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="max-width:100%; background-color: white;">
             <!-- HEADER-->
             <tr>
               <td>
-                <table class="header logo" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 100%; padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto;">
+                <!-- HEADER LOGO-->
+                <table class="header-logo" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 100%; padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto;">
                   <tr>
                     <td>
                       <!-- IMAGE -->
-                      <img src="https://i.postimg.cc/kXwGC4Np/lord-And-Taylor.png" alt="Lord and Taylor logo" style=" max-width: 50%;  margin-right: auto; margin-left: auto; display: block;">
+                      <img src="https://i.postimg.cc/vTgC9GY7/lord-And-Taylor.png" alt="Lord and Taylor logo" style=" max-width: 50%;  margin-right: auto; margin-left: auto; display: block;">
                     </td>
                   </tr>
-
                 </table>
-              </td>
-            </tr>
-
-            <!-- NAV -->
-            <tr>
-              <td>
-                <table class="nav" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 0px; background-color: white ; margin-top: 0px; margin-bottom: 0px; width: 100%; height:100%; color: #606060; font-family: sans-serif;">
+                <!-- HEADER NAV -->
+                <table class="header-nav" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 15px 0px; background-color: white ; margin-top: 0px; margin-bottom: 0px; width: 100%; height:100%; color: #606060; font-family: sans-serif;">
                   <tr>
                     <td align="center" style="">
                       <a style="color: #606060; text-decoration:none; text-transform: uppercase;" href="#">WOMEN</a>
@@ -67,36 +70,34 @@
                     <td align="center" style="">
                       <a style="color: #606060;  text-decoration:none; text-transform: uppercase;" href="#">SALE</a>
                     </td>
-
                   </tr>
                 </table>
-              </td>
-            </tr>
 
-          <!--  IMAGE  BANNER SECTION-->
-            <tr>
-              <td>
-                <table class="across-banner " width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; ">
+                <!--  HEADER IMAGE -->
+                <table class="header-image imageTable " width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; ">
                   <tr>
                     <td>
                       <!-- IMAGE -->
                       <img
-                        src="https://i.postimg.cc/yxydk6MW/banner.png"
+                        src="https://i.postimg.cc/8zSP104X/banner.png"
                         alt="banner for Canada Goose"
                         class="bgImg"
                         style="width: 100%; height:100%; padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 15px; margin-right: auto; margin-left: auto; display:block;">
+
                     </td>
                   </tr>
                 </table>
+
               </td>
             </tr>
 
-            <!-- CONTENT -->
+
+          <!-- CONTENT -->
           <!-- ARRIVALS -->
             <tr>
               <td>
                 <table
-                  class="text-section"
+                  class="arrivals"
                   width="100%"
                   height="100%"
                   align="center"
@@ -108,7 +109,7 @@
                     <td align="center">
                       <!-- ARRIVALS HEADER TITLE -->
                       <table
-                        class="arrivals headerTitle"
+                        class="arrivals-header"
                         width="100%"
                         height="100%"
                         align="center"
@@ -132,7 +133,7 @@
                       </table>
 
                       <table
-                        class="arrivalsTitle"
+                        class="arrivals-type"
                         width="100%"
                         height="100%"
                         align="center"
@@ -148,16 +149,23 @@
                             <p style="margin-bottom: 8px; margin-top: 5px; color: #505050; font-size:17px; ">Elevated everyday styles featuring oh-so-soft knits.</p>
 
                             <a href="#" style="margin-bottom: 0px; color: #505050; font-family: sans-serif; font-size: 16px; font-weight: 700; letter-spacing: .6px;">SHOP NOW</a>
-                            <!-- IMAGE -->
-                            <img src="https://i.postimg.cc/SxvKXvvL/orange-Sweater.png"
-                              alt="girl with orange knit sweater" class=""
-                              style="width: 70%; height:100%; margin-right: auto; margin-left: auto; padding-top: 10px; padding-bottom: 0px; display:block;">
+                            <table class="imageTable" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 100%;">
+                              <tr>
+                                <td>
+                                  <!-- IMAGE -->
+                                  <img src="https://i.postimg.cc/Wpx1y3kv/orange-Sweater.png"
+                                    alt="girl with orange knit sweater" class=""
+                                    style="width: 70%; height:100%; margin-right: auto; margin-left: auto; padding-top: 10px; padding-bottom: 0px; display:block;">
+                                </td>
+                              </tr>
+                            </table>
+
                           </td>
                         </tr>
                       </table>
 
                       <table
-                        class="arrivalsTitle"
+                        class="arrivals-type"
                         width="100%"
                         height="100%"
                         align="center"
@@ -173,10 +181,18 @@
                             <p style="margin-bottom: 8px; margin-top: 5px; color: #505050; font-size:17px; ">From statement pumps to sleek boots.</p>
 
                             <a href="#" style="margin-bottom: 0px; color: #505050; font-family: sans-serif; font-size: 16px; font-weight: 700; letter-spacing: .6px;">SHOP NOW</a>
-                            <!-- IMAGE -->
-                            <img src="https://i.postimg.cc/x1CC12tT/shoe.png"
-                              alt="black flat shoe" class=""
-                              style="width: 70%; height:100%; margin-right: auto; margin-left: auto; padding-top: 10px; padding-bottom: 0px; display:block;">
+                            <table class="imageTable" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 100%;">
+                              <tr>
+                                <td>
+                                  <!-- IMAGE -->
+                                  <img src="https://i.postimg.cc/yY98CHmS/shoe.png"
+                                    alt="black flat shoe" class=""
+                                    style="width: 70%; height:100%; margin-right: auto; margin-left: auto; padding-top: 10px; padding-bottom: 0px; display:block;">
+                                </td>
+                              </tr>
+                            </table>
+
+
                           </td>
                         </tr>
                       </table>
@@ -187,12 +203,11 @@
               </td>
             </tr>
 
-
             <!-- HOME EDIT SECTION -->
             <tr>
               <td>
                 <table
-                  class="homeEditHeaderTitle"
+                  class="home-edit-header"
                   width="100%"
                   height="100%"
                   align="center"
@@ -209,9 +224,9 @@
                   </tr>
                 </table>
 
-                <!-- ARRIVAL 1 -->
+                <!-- HOME EDIT BRAND -->
                 <table
-                  class="homeEditTitle"
+                  class="home-edit-brand"
                   width="100%"
                   height="100%"
                   align="center"
@@ -227,19 +242,26 @@
                       <p style="margin-bottom: 8px; margin-top: 5px; color: #505050; font-size:17px; width: 80%;">From playful cherry tea kettles and hors d'oeuvres trays to polka dotted tidbit plates, bring home a touch of whimsy.</p>
 
                       <a href="#" style="margin-bottom: 0px; color: #505050; font-family: sans-serif; font-size: 16px; font-weight: 700; letter-spacing: .6px;">SHOP NOW</a>
-                      <!-- IMAGE -->
-                      <img src="https://i.postimg.cc/HL8kb9qq/cherry-Plates.png"
-                        alt="cherry printed plates on a white table" class=""
-                        style="width: 95%; height:100%; margin-right: auto; margin-left: auto; padding-top: 10px; padding-bottom: 0px; display:block;">
+                      <table class="imageTable" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 100%;">
+                        <tr>
+                          <td>
+                            <!-- IMAGE -->
+                            <img src="https://i.postimg.cc/sfM2KS1m/cherry-Plates.png"
+                              alt="cherry printed plates on a white table" class=""
+                              style="width: 95%; height:100%; margin-right: auto; margin-left: auto; padding-top: 10px; padding-bottom: 0px; display:block;">
+                          </td>
+                        </tr>
+                      </table>
+
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
 
+            <!-- MARKDOWNS SECTION -->
             <tr>
               <td>
-                <!-- MARKDOWNS SECTION -->
                 <table
                   class="markdowns"
                   width="80%"
@@ -262,7 +284,7 @@
                   <tr>
                     <td>
                       <table
-                        class="markdownsLinks"
+                        class="markdowns-link"
                         width="50%"
                         height="100%"
                         align="left"
@@ -277,7 +299,7 @@
                         </tr>
                       </table>
                       <table
-                        class="markdownsLinks"
+                        class="markdowns-link"
                         width="50%"
                         height="100%"
                         align="right"
@@ -302,11 +324,11 @@
             <!-- AFTERPAY SECTION -->
             <tr>
               <td>
-                <table class="across-banner afterpaySection" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto;">
+                <table class="imageTable afterpay" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto;">
                   <tr>
                     <td>
                       <!-- IMAGE -->
-                      <img src="https://i.postimg.cc/66rTHz8w/afterPay.png" alt="afterpay option" style=" width: 80%;  margin-right: auto; margin-left: auto; display: block;">
+                      <img src="https://i.postimg.cc/j5kGLDbd/afterPay.png" alt="afterpay option" style=" width: 80%;  margin-right: auto; margin-left: auto; display: block;">
                     </td>
                   </tr>
 
@@ -317,19 +339,22 @@
             <!-- ALSO LOVE SECTION -->
             <tr>
               <td>
-                <table class="across-banner alsoLoveSection" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto; ">
+                <table class="also-love" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px; margin-right: auto; margin-left: auto; ">
                   <tr>
                     <td align="center">
                       <p style="color: black;  margin-bottom: 28px; margin-top: 37px;  font-size:23px; width: 80%; font-family: 'Open Sans', sans-serif; ">You may also love...</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <!-- IMAGE -->
-                      <img src="https://i.postimg.cc/TYT1Bmbb/scroll.png" alt="additional items for sale" style=" width: 80%;  margin-right: auto; margin-left: auto; display: block; padding-bottom: 50px; border-bottom: 1px solid #202020;">
-                    </td>
-                  </tr>
 
+                      <table class="imageTable" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="max-width: 100%;">
+                        <tr>
+                          <td>
+                            <!-- IMAGE -->
+                            <img src="https://i.postimg.cc/gjCQH1jC/scroll.png" alt="additional items for sale" style=" width: 80%;  margin-right: auto; margin-left: auto; display: block; padding-bottom: 50px; border-bottom: 1px solid #202020;">
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
                 </table>
               </td>
             </tr>
@@ -337,7 +362,7 @@
             <!--SOCIAL-OPTIONS-->
             <tr>
               <td>
-                <table class="socialOptions" width="85%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 170px; background: white; margin-top: 0px; margin-bottom: 0px; color: black; font-size: 27px;">
+                <table class="social-options" width="85%" height="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="padding: 20px 170px; background: white; margin-top: 0px; margin-bottom: 0px; color: black; font-size: 27px;">
                   <tr>
                     <td align="center">
                       <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -360,9 +385,7 @@
             <tr>
               <td>
                 <table class="footer" width="100%" height="100%" align="center" cellspacing="0" cellpadding="0"
-                  border="0"
-                  style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px;  width: 100%; height:100%;">
-
+                  border="0" style="padding: 0px 0px; background: white; margin-top: 0px; margin-bottom: 0px;  width: 100%; height:100%;">
 
                   <tr>
                     <td align="center" style="width: 80%; margin-right: auto; margin-left: auto; display: block;">
@@ -389,7 +412,6 @@
                       <a href=""
                         style="width: auto; height:100%; margin-right: auto; margin-left: auto; display: inline-block; color: black; font-size: 11px;">Unsubscribe
                       </a>
-
                     </td>
                   </tr>
 
@@ -415,11 +437,12 @@
             </tr>
 
 
-
-
           </table>
+          <!-- END of CONTAINER 600 -->
         </td>
       </tr>
+
     </table>
+    <!-- End of htmlemail container -->
   </body>
 </html>
